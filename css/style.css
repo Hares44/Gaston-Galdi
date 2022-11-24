@@ -36,9 +36,6 @@ nav {
 
 nav ul {
     list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-end;
 }
 
 nav ul li {
@@ -51,6 +48,16 @@ nav ul li {
     padding: 5px;
     background: rgb(127,121,121);
     background: linear-gradient(180deg, rgba(127,121,121,1) 0%, rgba(157,147,147,1) 35%, rgba(214,209,209,1) 100%);
+}
+
+.barra {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.barra_logo {
+    background-color: rgb(193, 189, 179);
 }
 
 h1 {
@@ -208,13 +215,16 @@ a {
 
 .body {
     background-color: #7f7979;
+    margin-top: 0px;
+    padding-top: 0px;
 }
 
 .titulosback {
     background-image: url("https://tickless.com/wp-content/uploads/2021/07/tickless-shop-cover.jpg");
-    background-position: center center;
+    background-position: bottom;
     background-repeat: no-repeat;
     background-size: cover;
+    background-color: #7f7979;
     height: 300px;
     color: aliceblue;
     text-shadow: 2px 2px 0px rgb(0 0 0 / 30%);
@@ -340,4 +350,25 @@ input {
 .btn-send:hover{
     background-color: white;
     color: black;
+}
+
+.btn-buscar {
+    width: 130px;
+    background-color: rgb(151, 151, 151);
+    color: aliceblue;
+    font-size: 20px;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-align: center;
+    padding: 0.5px;
+    border: none;    
+    border-radius: 8px;
+}
+
+.btn-buscar:hover{
+    background-color: white;
+    color: black;
+}
+
+.input_buscar {
+    outline: 0px;
 }
