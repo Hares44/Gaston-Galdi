@@ -4,59 +4,180 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Tickless Human Tickless Baby bebe Tickless Kid chicos Tickless Pet perros gatos Tickless Hunter Tickless Active Tickless Run Tickless Home Miteless Home Sé el primero en enterarte de nuestras noticias La tecnología TICKLESS protege a tus seres queridos del uso de productos químicos">
+        <meta name="keywords" content="Tickless Human Tickless Baby bebe Tickless Kid chicos Tickless Pet perros gatos Tickless Hunter Tickless Active Tickless Run Tickless Home Miteless Home Sé el primero en enterarte de nuestras noticias La tecnología TICKLESS protege a tus seres queridos del uso de productos químicos">
         <!-- CSS only -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
         <link rel="stylesheet" href="css/style.css">
+        <link rel="shortcut icon" href="./img/favicon.jpg" type="image/x-icon">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
         <title>Gaston Galdi</title>
     </head>
-<body>
-<div class="body">
-    <nav>
-        <div class="logo">
-            <img src="./img/logo_web.png" alt="logo_tickeless">
+    <body>
+        <div class="body">
+              <section class="navbar barra_logo media_logo">
+                <div class="container barra_logo">
+                  <a href="./index.html" class="navbar-brand" href="#">
+                    <img src="./img/logo_web.png" alt="Logo Tickless" height="40px">
+                  </a>
+                  <form class="d-flex" role="search">
+                    <input class="form-control me-2 input_buscar" type="search" placeholder="Buscar" aria-label="Buscar">
+                    <button class="btn-buscar" type="submit">Buscar</button>
+                  </form>
+                </div>
+              </section>
+              <nav>
+                <div class="container no-gutters">
+                  <ul class="barra_navegacion row no-gutters">
+                    <li class="btn-nav"><a href="./index.html">Inicio</a></li>
+                    <li class="btn-nav"><a href="./productos.html">Productos</a></li>
+                    <li class="btn-nav"><a href="./como_funciona.html">Como Funciona</a></li>
+                    <li class="btn-nav"><a href="./preguntas.html">Preguntas Frecuentes</a></li>
+                    <li class="btn-nav"><a href="./contacto.html">Contacto</a></li>
+                  </ul>
+                </div>
+             </nav>
+             <nav class="navbar fixed-top nav-celular">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#"><img src="./img/logo_web.png" alt="Logo Tickless" height="30px"></a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                      <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                      <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                          <a href="./index.html" class="nav-link active" aria-current="page">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                          <a href="./productos.html" class="nav-link active">Productos</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Dropdown
+                          </a>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                              <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                          </ul>
+                        </li>
+                      </ul>
+                      <form class="d-flex mt-3" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Buscar</button>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </nav>
+              <div class="container titulosback tituloscontacto">
+                <h2>CONTACTO</h2>
+              </div>
+    <form action="./enviar.php" method="post">
+        <fieldset class="container">
+            <div class="col-12">
+                <label class="col-2" for="name">Nombre</label>
+                <!-- required -->
+                <input class="col-8" type="text" id="name" name="name" title="Por favor, ingrese su nombre." required>
+            </div>
+            <div class="col-12">
+                <label class="col-2" for="lastName">Apellido</label>
+                <input class="col-8" type="text" id="lastName" name="lastName" title="Por favor, ingrese su apellido.">
+            </div>
+            <div class="col-12">
+                <label class="col-2" for="age">Edad</label>
+                <input class="col-2" type="number" name="age" id="age" min="18" required>
+            </div>
+            <div class="col-12">
+                <label class="col-2" for="phoneNumber">Teléfono</label>
+                <input class="col-8" type="tel" id="tel" name="tel" title="Por favor, ingrese su número telefónico.">
+            </div>
+            <div class="col-12">
+                <label class="col-2" for="email">E-mail</label>
+                <input class="col-8" type="email" id="email" name="email" title="Por favor, ingrese su dirección de mail." required>
+            </div>
+            <div class="col-12">
+                <label class="col-2" for="text">Mensaje</label>
+                <textarea class="col-8" name="message" id="message" cols="20" rows="5"></textarea>
+            </div>
+            <div class="col-12">
+                <input class="btn-send" type="reset" value="Borrar">
+                <input class="btn-send" type="submit" value="Enviar">
+            </div>
+        </fieldset>
+    </form>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <section class="seccion_suscripcion">
+        <div class="container label_suscripcion">
+          <label for="email">Suscribite y recibí nuestras ofertas</label>
+          <input type="email" id="email" name="email" placeholder="Ingrese su direccion de mail." title="Por favor, ingrese su dirección de mail." required>
+          <input class="btn-send" type="submit" value="Suscribirse">
+      </div>
+      </section>
+      <footer>
+        <div class="container container_footer">
+          <div class="row">
+            <div class="col-lg-3">
+              <h4>Redes</h4>
+            </div>
+            <div class="col-lg-3">
+              <h4>Secciones</h4>
+            </div>
+            <div class="col-lg-6">
+              <h4>Informacion de la Tienda</h4>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-3">
+             <div class="redes">
+                  <div class="imagenes_redes">
+                    <img src="./img/logo_facebook_footer.png" alt="logo facebook footer">
+                  </div>
+                  <div class="imagenes_redes">
+                    <img src="./img/logo_instagram_footer.png" alt="logo instagram footer">
+                  </div>
+                  <div class="imagenes_redes">
+                    <img src="./img/logo_twitter_footer.png" alt="logo twitter footer">
+                  </div>
+                  <div class="imagenes_redes">
+                    <img src="./img/logo_twitch_footer.png" alt="logo twitch footer">
+                  </div>
+                </div>
+            </div>
+            <div class="col-lg-3">
+            <ul>
+                <li><a href="./index.html" class="underline-hover-efecto">Inicio</a></li>
+                <li><a href="./productos.html" class="underline-hover-efecto">Productos</a></li>
+                <li><a href="./como_funciona.html" class="underline-hover-efecto">Como Funciona</a></li>
+                <li><a href="./preguntas.html" class="underline-hover-efecto">Preguntas Frecuentes</a></li>
+                <li><a href="./contacto.html" class="underline-hover-efecto">Contacto</a></li>
+            </ul>
+            </div>
+            <div class="col-lg-3">
+              <ul>
+                 <li>Armenia 2185 - Local</li>
+                 <li>CABA</li>
+                 <li>11 5326 9174</li>
+                 <li>gaston.hares@gmail.com</li>
+              </ul>
+            </div>
+            <div class="col-lg-3">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.7036435920377!2d-58.424649984217474!3d-34.586364564088235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb5812f0f0a3f%3A0x95bc3408133e31fe!2sArmenia%202185%2C%20C1425FBC%20CABA!5e0!3m2!1ses-419!2sar!4v1665035917514!5m2!1ses-419!2sar" width="200" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="video_apariencia"></iframe>
+            </div>
         </div>
-        <ul>
-            <li><a href="./index.html">Inicio</a></li>
-            <li><a href="./productos.html">Productos</a></li>
-            <li><a href="./como_funciona.html">Como Funciona</a></li>
-            <li><a href="./preguntas.html">Preguntas Frecuentes</a></li>
-            <li><a href="./contacto.html">Contacto</a></li>
-        </ul>
-    </nav>
-    <h2>Contacto</h2>
-    <section>
-        <form>
-            <label for="nombre">Nombre: </label><input type="text" name="nombre"><br>
-            <label for="direccion">Direccion: </label><input type="text" name="direccion"><br>
-            <label for="mail">mail: </label><input type="text" name="mail"><br>
-            <label for="comentarios">Comentarios: </label><input type="text" name="comentarios"><br>
-        </form>
-    </section>
-    <footer>
-        <ul>
-            <li>Facebool</li>
-            <li>Instagram</li>
-            <li>twitter</li>
-            <li>twicth</li>
-        </ul>
-        <ul>
-            <li><a href="./index.html">Inicio</a></li>
-            <li><a href="./productos.html">Productos</a></li>
-            <li><a href="./como_funciona.html">Como Funciona</a></li>
-            <li><a href="./preguntas.html">Preguntas Frecuentes</a></li>
-            <li><a href="./contacto.html">Contacto</a></li>
-        </ul>
-        <ul>
-            <li>Direccion</li>
-            <li>Localidad</li>
-            <li>Telefono</li>
-            <li>mail</li>
-        </ul>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.7036435920377!2d-58.424649984217474!3d-34.586364564088235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb5812f0f0a3f%3A0x95bc3408133e31fe!2sArmenia%202185%2C%20C1425FBC%20CABA!5e0!3m2!1ses-419!2sar!4v1665035917514!5m2!1ses-419!2sar" width="200" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </footer>
+        </div>  
+      </footer>
 </div>
 <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>

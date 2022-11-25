@@ -15,26 +15,36 @@
         <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
         <title>Gaston Galdi</title>
     </head>
-<body>
-<div class="body">
-    <nav>
-        <div class="logo">
-            <img src="./img/logo_web.png" alt="logo_tickeless">
-        </div>
-        <ul>
-            <li><a href="./index.html">Inicio</a></li>
-            <li><a href="./productos.html">Productos</a></li>
-            <li><a href="./como_funciona.html">Como Funciona</a></li>
-            <li><a href="./preguntas.html">Preguntas Frecuentes</a></li>
-            <li><a href="./contacto.html">Contacto</a></li>
-        </ul>
-    </nav>
-  <div class="titulosback titulospreguntas">
+    <body>
+      <div class="body">
+            <section class="navbar barra_logo">
+              <div class="container barra_logo">
+                <a href="./index.html" class="navbar-brand" href="#">
+                  <img src="./img/logo_web.png" alt="Logo Tickless" height="40px">
+                </a>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2 input_buscar" type="search" placeholder="Buscar" aria-label="Buscar">
+                  <button class="btn-buscar" type="submit">Buscar</button>
+                </form>
+              </div>
+            </section>
+            <nav>
+              <div class="container no-gutters">
+                <ul class="barra_navegacion row no-gutters">
+                  <li class="btn-nav"><a href="./index.html">Inicio</a></li>
+                  <li class="btn-nav"><a href="./productos.html">Productos</a></li>
+                  <li class="btn-nav"><a href="./como_funciona.html">Como Funciona</a></li>
+                  <li class="btn-nav"><a href="./preguntas.html">Preguntas Frecuentes</a></li>
+                  <li class="btn-nav"><a href="./contacto.html">Contacto</a></li>
+                </ul>
+              </div>
+           </nav>
+  <div class="container titulosback titulospreguntas">
       <h2>PREGUNTAS FRECUENTES</h2>
   </div>
-    <section class="section_preguntas">
+    <section class="container">
           <p>
-            <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+            <button class="btn btn-primary btn_preguntas" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
                 Como actua Tickless?
             </button>
           </p>
@@ -44,7 +54,7 @@
             </div>
           </div>
           <p>
-            <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+            <button class="btn btn-primary btn_preguntas" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
                 Que es este ultraosnido?
             </button>
           </p>
@@ -54,7 +64,7 @@
             </div>
           </div>
           <p>
-            <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+            <button class="btn btn-primary btn_preguntas" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
                 TICKLESS ha sido probado por un laboratorio?
             </button>
           </p>
@@ -64,7 +74,7 @@
             </div>
           </div>
           <p>
-            <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+            <button class="btn btn-primary btn_preguntas" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
                 Mi perro puede oir los ultrasonidos, ¿no le molesta?
             </button>
           </p>
@@ -73,28 +83,99 @@
               No! Aunque los perros y los gatos oyen mucho mejor que las personas, la onda sonora que emite TICKLESS no les molesta. Los perros pueden realizar ondas de ultrasonido entre 25-30 KHz, el dispositivo funciona con 40 KHz, lo que hace que el dispositivo sea completamente seguro e inofensivo.
             </div>
           </div>
+          <p>
+            <button class="btn btn-primary btn_preguntas" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                TICKLESS proporciona proteccion al 100%?
+            </button>
+          </p>
+          <div class="collapse" id="collapseExample">
+            <div class="card card-body">
+              Debido al ultimo estudio de campo, podemos concluir que el dispositivo es 94% eficiente contra garrapatas sin usar quimicos peligrosos! Para garantizar la mejor proteccion posible, recomendamos tomar otras precauciones (por ejemplo, lavarse con champu)antes de su uso.
+              En areas densamente pobladas por garrapatas, la proteccion al 100% no esta garantizada. No es adecuado para eliminar garrapatas o pulgas de mascotas que ya han sido infectadas.
+            </div>
+          </div>
+            <p>
+              <button class="btn btn-primary btn_preguntas" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                  ¡Estoy usando el dispositivo, pero tengo una garrapata en la piel!
+              </button>
+            </p>
+            <div class="collapse" id="collapseExample">
+              <div class="card card-body">
+                En algunos casos, especialmente en areas densamente pobladas por parasitos es posible que una garrapata ocasional se adhiera a usted o a su mascota a pesar de usar TICKLESS, pero las ondas de ultrasonido los molestan y los dejaran a usted o a su mascota.
+                Si encuentra una garrapata trepando, cogela con una pañuelo de papel y tirela por el inodoro.
+              </div>
+            </div> 
+              <p>
+                <button class="btn btn-primary btn_preguntas" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                    El dispositivo es resistente al agua?
+                </button>
+              </p>
+              <div class="collapse" id="collapseExample">
+                <div class="card card-body">
+                  El dispositivo es altamente resistente a la humedad(IP31), lo que significa que se puede usar en clima lluvioso y no hay problema si cae un poco de agua.
+                  Si su perro entra accidentalmnente en el agua, seque el dispositivo con un secador de pelo de soplado frio tan pronto como pueda. En caso de que se seque inmediatamente, lo mas probable es que el dispositivo funcione sin problemas a partir de entonces, pero podria afectar la duracion de la bateria.
+                </div>
+               </div> 
+    </section>
+    <section class="seccion_suscripcion">
+      <div class="container label_suscripcion">
+        <label for="email">Suscribite y recibí nuestras ofertas</label>
+        <input type="email" id="email" name="email" placeholder="Ingrese su direccion de mail." title="Por favor, ingrese su dirección de mail." required>
+        <input class="btn-send" type="submit" value="Suscribirse">
+    </div>
     </section>
     <footer>
-        <ul>
-            <li>Facebool</li>
-            <li>Instagram</li>
-            <li>twitter</li>
-            <li>twicth</li>
-        </ul>
-        <ul>
-            <li><a href="./index.html">Inicio</a></li>
-            <li><a href="./productos.html">Productos</a></li>
-            <li><a href="./como_funciona.html">Como Funciona</a></li>
-            <li><a href="./preguntas.html">Preguntas Frecuentes</a></li>
-            <li><a href="./contacto.html">Contacto</a></li>
-        </ul>
-        <ul>
-            <li>Direccion</li>
-            <li>Localidad</li>
-            <li>Telefono</li>
-            <li>mail</li>
-        </ul>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.7036435920377!2d-58.424649984217474!3d-34.586364564088235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb5812f0f0a3f%3A0x95bc3408133e31fe!2sArmenia%202185%2C%20C1425FBC%20CABA!5e0!3m2!1ses-419!2sar!4v1665035917514!5m2!1ses-419!2sar" width="200" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <div class="container container_footer">
+        <div class="row">
+          <div class="col-lg-3">
+            <h4>Redes</h4>
+          </div>
+          <div class="col-lg-3">
+            <h4>Secciones</h4>
+          </div>
+          <div class="col-lg-6">
+            <h4>Informacion de la Tienda</h4>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-3">
+           <div class="redes">
+                <div class="imagenes_redes">
+                  <img src="./img/logo_facebook_footer.png" alt="logo facebook footer">
+                </div>
+                <div class="imagenes_redes">
+                  <img src="./img/logo_instagram_footer.png" alt="logo instagram footer">
+                </div>
+                <div class="imagenes_redes">
+                  <img src="./img/logo_twitter_footer.png" alt="logo twitter footer">
+                </div>
+                <div class="imagenes_redes">
+                  <img src="./img/logo_twitch_footer.png" alt="logo twitch footer">
+                </div>
+              </div>
+          </div>
+          <div class="col-lg-3">
+          <ul>
+              <li><a href="./index.html" class="underline-hover-efecto">Inicio</a></li>
+              <li><a href="./productos.html" class="underline-hover-efecto">Productos</a></li>
+              <li><a href="./como_funciona.html" class="underline-hover-efecto">Como Funciona</a></li>
+              <li><a href="./preguntas.html" class="underline-hover-efecto">Preguntas Frecuentes</a></li>
+              <li><a href="./contacto.html" class="underline-hover-efecto">Contacto</a></li>
+          </ul>
+          </div>
+          <div class="col-lg-3">
+            <ul>
+               <li>Armenia 2185 - Local</li>
+               <li>CABA</li>
+               <li>11 5326 9174</li>
+               <li>gaston.hares@gmail.com</li>
+            </ul>
+          </div>
+          <div class="col-lg-3">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.7036435920377!2d-58.424649984217474!3d-34.586364564088235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb5812f0f0a3f%3A0x95bc3408133e31fe!2sArmenia%202185%2C%20C1425FBC%20CABA!5e0!3m2!1ses-419!2sar!4v1665035917514!5m2!1ses-419!2sar" width="200" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="video_apariencia"></iframe>
+          </div>
+      </div>
+      </div>  
     </footer>
 </div>
 <!-- JavaScript Bundle with Popper -->
