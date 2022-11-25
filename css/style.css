@@ -413,3 +413,24 @@ input {
     background-color: rgb(167, 167, 167);
     border-color: rgb(167, 167, 167);
 } 
+
+.label-formulario {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 18px;
+    color: aliceblue; 
+ }
+
+ .formulario {
+    display: grid;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    justify-content: center;
+ }
+
+ .input-formulario {
+    width: 100%;
+ }
+
+ .alinear {
+    text-align: center;
+ }
