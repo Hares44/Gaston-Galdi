@@ -346,6 +346,13 @@ input {
     border-radius: 8px;
 }
 
+textarea {
+    border-radius: 8px;
+    border: 1px solid black;
+    padding: 10px;
+    margin-left: 10px;
+}
+
 .btn-send {
     width: 130px;
     background-color: rgb(151, 151, 151);
@@ -433,4 +440,8 @@ input {
 
  .alinear {
     text-align: center;
+ }
+
+ .body-hamburguesa {
+    background-color: rgb(193, 189, 179);
  }
