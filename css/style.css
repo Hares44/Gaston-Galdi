@@ -195,6 +195,9 @@ main {
     h2{
         font-size: 30px;
     }
+    .mapa{
+        text-align: center;
+    }
 }
 
 @media screen and (max-width: 1030px) {
@@ -212,11 +215,10 @@ main {
     }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1030px) {
     .seccion_suscripcion {
-        background-color: rgb(193, 189, 179);
-        height: 80px;
-}
+        display: none;
+    }
 }
 
 a {
@@ -241,6 +243,11 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.titulosindex {
+    margin-bottom: 8px;
+    background-image: url("https://tickless.com/wp-content/uploads/2021/07/whoweare_300.jpg");
 }
 
 .tituloscomofunciona{
@@ -390,7 +397,8 @@ textarea {
     background-color: rgb(193, 189, 179);
     text-decoration: none;
     font-family: 'Roboto Condensed', sans-serif;
-    font-size: 20px;
+    font-size: 17px;
+    padding: 2px;
     text-align: center;
     height: 30px; 
     border: 5px;
@@ -445,3 +453,14 @@ textarea {
  .body-hamburguesa {
     background-color: rgb(193, 189, 179);
  }
+
+ .texto_general {
+    font-family: 'Roboto Condensed', sans-serif;
+    color: aliceblue;
+    font-size: 16px;
+ }
+
+ .ancho {
+    width: 100px;
+ }
+ 
