@@ -8,3 +8,21 @@ if (numero > 0) {
 } else {
   console.log("El número ingresado es cero.");
 }
+
+let numeros = [];
+
+console.log("¡Bienvenido al ingreso de números!");
+console.log("Ingresa una serie de números (ingresa un número negativo para finalizar):");
+
+for (;;) {
+  const numero = prompt("Ingresa un número:");
+
+  if (numero < 0) {
+    break;
+  }
+
+  numeros.push(parseInt(numero));
+}
+
+console.log("Los números ingresados son:");
+console.log(numeros);
