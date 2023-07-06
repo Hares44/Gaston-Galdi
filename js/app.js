@@ -1,28 +1,52 @@
-const numero = prompt("Ingresa un número:");
+var numero1 = parseFloat(prompt("Ingresa el primer número:"));
+var numero2 = parseFloat(prompt("Ingresa el segundo número:"));
 
-// Verificamos si el número ingresado es positivo, negativo o cero
-if (numero > 0) {
-  console.log("El número ingresado es positivo.");
-} else if (numero < 0) {
-  console.log("El número ingresado es negativo.");
-} else {
-  console.log("El número ingresado es cero.");
+var resultado;
+
+function suma(a, b) {
+  return a + b;
 }
 
-let numeros = [];
-
-console.log("¡Bienvenido al ingreso de números!");
-console.log("Ingresa una serie de números (ingresa un número negativo para finalizar):");
-
-for (;;) {
-  const numero = prompt("Ingresa un número:");
-
-  if (numero < 0) {
-    break;
-  }
-
-  numeros.push(parseInt(numero));
+function resta(a, b) {
+  return a - b;
 }
 
-console.log("Los números ingresados son:");
-console.log(numeros);
+function multiplicacion(a, b) {
+  return a * b;
+}
+
+resultado = suma(numero1, numero2);
+console.log("La suma es: " + resultado);
+
+resultado = resta(numero1, numero2);
+console.log("La resta es: " + resultado);
+
+resultado = multiplicacion(numero1, numero2);
+console.log("La multiplicación es: " + resultado);
+
+var persona = {
+  nombre: "Juan",
+  edad: 30,
+  ciudad: "Barcelona"
+};
+
+var listaNombres = ["Ana", "Carlos", "Luis", "Pedro", "María"];
+
+console.log("Nombre: " + persona.nombre);
+console.log("Edad: " + persona.edad);
+console.log("Ciudad: " + persona.ciudad);
+
+console.log("Lista de nombres:");
+console.log(listaNombres);
+
+var nombreBuscado = "Ana";
+var nombreEncontrado = listaNombres.includes(nombreBuscado);
+
+console.log("¿Se encontró el nombre '" + nombreBuscado + "' en la lista? " + nombreEncontrado);
+
+var nombresFiltrados = listaNombres.filter(function(nombre) {
+  return nombre.length > 4;
+});
+
+console.log("Nombres filtrados (con más de 4 caracteres):");
+console.log(nombresFiltrados);
